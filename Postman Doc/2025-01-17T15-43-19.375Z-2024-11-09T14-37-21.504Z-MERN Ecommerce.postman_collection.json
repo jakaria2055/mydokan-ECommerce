@@ -1,0 +1,675 @@
+{
+	"info": {
+		"_postman_id": "530750d5-0f6d-44bd-8055-8d362d8c078e",
+		"name": "MERN Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9518923",
+		"_collection_link": "https://planetary-escape-12290.postman.co/workspace/MERN-Ecommerce~9d67b5b3-7c43-44b2-85c7-c7e07593f56d/collection/9518923-530750d5-0f6d-44bd-8055-8d362d8c078e?action=share&source=collection_link&creator=9518923"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ProductBrandList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductBrandList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductBrandList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductCategoryList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductCategoryList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductCategoryList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductSliderList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductSliderList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductSliderList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByBrand/64f8751a502e1b80556da142",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByBrand",
+								"64f8751a502e1b80556da142"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByCategory/64f875ed502e1b80556da14d",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByCategory",
+								"64f875ed502e1b80556da14d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListBySmilier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListBySmilier/64f875ed502e1b80556da14d",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListBySmilier",
+								"64f875ed502e1b80556da14d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByKeyword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByKeyword/Apple",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByKeyword",
+								"Apple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByRemark",
+					"request": {
+						"auth": {
+							"type": "ntlm"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByRemark/top",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByRemark",
+								"top"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductDetails/64f8ba608fcc62fe3de37a2e",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductDetails",
+								"64f8ba608fcc62fe3de37a2e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByFilter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"brandID\":\"64f8751a502e1b80556da142\",\n    \"categoryID\":\"64f875ed502e1b80556da14d\",\n    \"priceMax\":\"20000\",\n    \"priceMin\":\"30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/ProductListByFilter",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByFilter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "UserOTP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/UserOTP/engr.rabbil@yahoo.com",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UserOTP",
+								"engr.rabbil@yahoo.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyLogin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/VerifyLogin/engr.rabbil@yahoo.com/706627",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"VerifyLogin",
+								"engr.rabbil@yahoo.com",
+								"706627"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ReadProfile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ReadProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cus_add\":\"Dhaka1\",\n  \"cus_city\":\"Dhaka\",\n  \"cus_country\":\"Dhaka\",\n  \"cus_fax\":\"Dhaka\",\n  \"cus_name\":\"Dhaka\",\n  \"cus_phone\":\"Dhaka\",\n  \"cus_postcode\":\"Dhaka\",\n   \"cus_state\":\"Dhaka\",\n   \"ship_add\":\"Dhaka\",\n   \"ship_city\":\"Dhaka\",\n   \"ship_country\":\"Dhaka\",\n   \"ship_name\":\"Dhaka\",\n    \"ship_phone\":\"Dhaka\",\n    \"ship_postcode\":\"Dhaka\",\n    \"ship_state\":\"Dhaka\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/CreateProfile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CreateProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cus_add\":\"Dhaka0\",\n  \"cus_city\":\"Dhaka\",\n  \"cus_country\":\"Dhaka\",\n  \"cus_fax\":\"Dhaka\",\n  \"cus_name\":\"Dhaka\",\n  \"cus_phone\":\"Dhaka\",\n  \"cus_postcode\":\"Dhaka\",\n   \"cus_state\":\"Dhaka\",\n   \"ship_add\":\"Dhaka\",\n   \"ship_city\":\"Dhaka\",\n   \"ship_country\":\"Dhaka\",\n   \"ship_name\":\"Dhaka\",\n    \"ship_phone\":\"Dhaka\",\n    \"ship_postcode\":\"Dhaka\",\n    \"ship_state\":\"Dhaka\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/UpdateProfile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UpdateProfile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wish",
+			"item": [
+				{
+					"name": "SaveWishList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productID\":\"64f87d60502e1b80556da15a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/SaveWishList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"SaveWishList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveWishList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productID\":\"64f87d60502e1b80556da15a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/RemoveWishList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"RemoveWishList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WishList",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/WishList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"WishList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "SaveCartList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"productID\":\"654dbf25abda0c85053c9902\",\n   \"color\":\"Red\",\n   \"qty\":\"2\",\n   \"size\":\"Small\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/SaveCartList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"SaveCartList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCartList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"color\":\"Greeen\",\n   \"qty\":\"30\",\n   \"size\":\"Small\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/UpdateCartList/6585afa15f3d55fbdb55b079",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UpdateCartList",
+								"6585afa15f3d55fbdb55b079"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveCartList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productID\":\"654dbf25abda0c85053c9902\",\n  \"_id\":\"6585afa05f3d55fbdb55b077\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/RemoveCartList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"RemoveCartList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CartList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/CartList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CartList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "CreateInvoice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/CreateInvoice",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CreateInvoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InvoiceList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/InvoiceList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"InvoiceList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InvoiceProductList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/InvoiceProductList/658eb74eb9c62e96f2645cf4",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"InvoiceProductList",
+								"658eb74eb9c62e96f2645cf4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FeaturesList",
+			"item": [
+				{
+					"name": "FeaturesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/FeaturesList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"FeaturesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LegalDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/LegalDetails/howtobuy",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"LegalDetails",
+								"howtobuy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "CreateReview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"productID\":\"654dbf25abda0c85053c9902\",\n   \"des\":\"ABC\",\n   \"rating\":\"4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/CreateReview",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CreateReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductReviewList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductReviewList/64f8ba608fcc62fe3de37a2e",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductReviewList",
+								"64f8ba608fcc62fe3de37a2e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE",
+			"value": "https://ecom.teamrabbil.com/api/v1",
+			"type": "string"
+		}
+	]
+}
