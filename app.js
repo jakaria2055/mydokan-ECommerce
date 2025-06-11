@@ -2,11 +2,13 @@ import cookieParser from "cookie-parser";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import mongoSanitize from "express-mongo-sanitize";
-import xss from "xss-clean"
+//import mongoSanitize from "express-mongo-sanitize";
+//import xss from "xss-clean"
 import hpp from "hpp";
 import rateLimit from "express-rate-limit";
 import router from "./src/routers/api.js";
+
+
 
 const app = express();
 
@@ -33,7 +35,7 @@ const limiter  = rateLimit({
 
 app.use(limiter);
 
-//app.use('etag', false)
+app.set('etag', false)
 
 app.use('/api/v1', router);
 
