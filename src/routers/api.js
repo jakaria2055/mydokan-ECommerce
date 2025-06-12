@@ -34,6 +34,8 @@ import {
   SaveCartList,
   UpdateCartList,
 } from "../controllers/CartListController.js";
+import { FeaturesList, LegalDetails } from "../controllers/FeaturesController.js";
+import { CreateInvoice, InvoiceList, InvoiceProductList } from "../controllers/InvoiceController.js";
 
 const router = express.Router();
 
@@ -74,5 +76,17 @@ router.post("/SaveCartList", AuthVerification, SaveCartList);
 router.post("/UpdateCartList/:cartID", AuthVerification, UpdateCartList);
 router.post("/RemoveCartList", AuthVerification, RemoveCartList);
 router.get("/CartList", AuthVerification, CartList);
+
+//Feature
+router.get("/FeaturesList", AuthVerification, FeaturesList);
+router.get("/LegalDetails/:type", AuthVerification, LegalDetails);
+
+//Invoice & Payment
+router.post("/CreateInvoice", AuthVerification, CreateInvoice);
+router.get("/InvoiceList", AuthVerification, InvoiceList);
+router.get("/InvoiceProductList/:invoice_id", AuthVerification, InvoiceProductList);
+
+
+//next: 2:3;30
 
 export default router;
