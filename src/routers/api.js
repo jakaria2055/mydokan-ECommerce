@@ -86,7 +86,4 @@ router.post("/CreateInvoice", AuthVerification, CreateInvoice);
 router.get("/InvoiceList", AuthVerification, InvoiceList);
 router.get("/InvoiceProductList/:invoice_id", AuthVerification, InvoiceProductList);
 
-
-//next: 2:3;30
-
 export default router;
