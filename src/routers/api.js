@@ -1,5 +1,6 @@
 import express from "express";
 import {
+  CreateBrandList,
   CreateReview,
   ProductBrandList,
   ProductCategoryList,
@@ -38,6 +39,7 @@ const router = express.Router();
 
 //PRODUCT
 router.get("/productBrandList", ProductBrandList);
+router.post("/CreateBrandList", CreateBrandList);
 router.get("/ProductCategoryList", ProductCategoryList);
 router.get("/ProductSliderList", ProductSliderList);
 

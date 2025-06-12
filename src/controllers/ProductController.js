@@ -1,6 +1,7 @@
 import {
   BrandListService,
   CategoryListService,
+  CreateBrandListService,
   CreateReviewService,
   DetailsService,
   ListByBrandService,
@@ -16,6 +17,11 @@ import {
 export const ProductBrandList = async (req, res) => {
   const result = await BrandListService();
   return res.status(200).json(result);
+};
+
+export const CreateBrandList = async (req, res) => {
+  const result = await CreateBrandListService(req, res);
+  return res.status(201).json(result);
 };
 
 export const ProductCategoryList = async (req, res) => {
